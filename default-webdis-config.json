@@ -1,0 +1,23 @@
+{
+	"redis_host":	"127.0.0.1",
+	"redis_port":	6379,
+	"redis_auth":	null,
+	"http_host":	"127.0.0.1",
+	"http_port":	7379,
+	"threads":	5,
+	"pool_size": 20,
+	"daemonize":	false,
+	"websockets":	false,
+	"database":	0,
+	"acl": [
+		{
+			"disabled":	["*"]
+		},
+		{
+			"http_basic_auth": "user:password",
+			"enabled":	["PUBLISH"]
+		}
+	],
+	"verbosity": 6,
+	"logfile": "webdis.log"
+}
